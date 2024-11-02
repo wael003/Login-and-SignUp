@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App - Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="./How-To-Start-Your-Travel-Website-In-2023.webp" alt="Travel" class="login-image"/>
+        </div>
+        <div class="form-section">
+            <h1>Travel in Middle East</h1>
+            <div class="form-toggle">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <div class="error-message" id="loginError"></div>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <a class="forget-link"  id="forgotPasswordLink" href="#">Forgot Password?</a>
+
+
+                
+            </form>
+            <div id="forgotPasswordModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2 id="forgot">Forgot Password</h2>
+                    <div class="error-message" id="forgotError"></div>
+                    <input type="email" placeholder="Enter your email" id="forgotEmail" required>
+                    <button id="sendResetLink">Send Reset Link</button>
+                </div>
+            </div>
+            <form id="signupForm" class="form" style="display: none;">
+                <h2>Sign Up</h2>
+                <div class="error-message" id="signupError"></div>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
