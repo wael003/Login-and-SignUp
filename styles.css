@@ -52,6 +52,9 @@ button {
     font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+form button{
+    width: 100%;
+}
 
 #loginBtn,
 #signupBtn {
@@ -67,9 +70,9 @@ button {
     box-shadow: 0px 0px 19px 4px;
 }
  .forget-link{
-    color: #007BFF;
+    color: #ffffff;
     position: relative;
-    left: 50px;
+    left:75%;
     top: 10px;
  }
 
@@ -119,7 +122,7 @@ button[type="submit"]:hover {
     
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         flex-direction: column;
         height: auto;
@@ -132,15 +135,14 @@ button[type="submit"]:hover {
     .image-section {
         height: 200px;
         /* Set height for small screens */
-    }
+    /* }
     .login-image{
         position: absolute;
         top: 0px;
         height: 380px;
         width: 100%;
     }
-}
-
+} */ 
 
 /*  */
 .modal {
@@ -186,3 +188,62 @@ button[type="submit"]:hover {
 #forgot{
     color: black;
 }
+/* Extra Small (Mobile - Portrait) */
+@media (max-width: 480px) {
+    /* Styles for small mobile screens */
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .form-section{
+        position: relative;
+        top: 50px;
+    }
+    .forget-link{
+        left: 60%;
+    }
+    .login-image{
+        width: 100%;
+    }
+    
+  }
+  
+  /* Small (Mobile - Landscape) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for larger mobile screens */
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .form-section{
+        position: relative;
+        top: 50px;
+    }
+  }
+  
+  /* Medium (Tablet) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .form-section{
+        position: relative;
+        top: 50px;
+    }
+    .login-image{
+        left: 150px;
+    }
+  }
+  
+  /* Large (Desktop - Small) */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for small desktops */
+  }
+  
+  /* Extra Large (Desktop - Large) */
+  @media (min-width: 1201px) {
+    /* Styles for large desktops */
+  }
+  
