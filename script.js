@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     if (email === '' || password === '') {
         document.getElementById('loginError').innerText = 'Please fill in all fields.';
     } else {
-        alert('Logged in successfully!');
+        // alert('Logged in successfully!');
     }
 });
 
@@ -33,7 +33,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
     if (fullName === '' || email === '' || password === '') {
         document.getElementById('signupError').innerText = 'Please fill in all fields.';
     } else {
-        alert('Signed up successfully!');
+        // alert('Signed up successfully!');
     }
 });
 // Show Forgot Password Modal
@@ -66,3 +66,36 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+
+    const email = document.getElementById('signup-email');
+    console.log("this is the email :" + email.value);
+
+    // const action = document.getElementById("sub");
+    // action.onclick(sendEmail);
+
+    
+    // (function () {
+    //     emailjs.init("vDrSciR36E6DvUNsW"); // Replace with your EmailJS user ID
+    // })();
+
+    // const sendEmail = () => {
+    //     emailjs
+    //         .send("service_m6ivpod", "template_8kzwktn", {
+    //             to_name: email.value,
+    //             from_name: "US",
+    //             message: "This is a test email sent using EmailJS",
+    //         })
+    //         .then(
+    //             (response) => {
+    //                 console.log("SUCCESS!", response.status, response.text);
+    //                 alert("Email sent successfully");
+    //             },
+    //             (error) => {
+    //                 console.error("FAILED...", error);
+    //                 alert("Failed to send email");
+    //             }
+    //         );
+    // };
+
+
+
